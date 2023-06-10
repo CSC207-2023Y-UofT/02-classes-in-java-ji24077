@@ -126,12 +126,12 @@ public class Silly implements Comparable<Silly>{
         x.countStatic();
         x.countStatic();
 
-        int[] expected_values = {x.countStatic(), y.countStatic(), x.countStatic(), x.countStatic()};
-       // int[] expected_values ={
-             //   expected_values[0] = x.countStatic();
-            //    expected_values[1] = y.countStatic();
-         //       expected_values[2] = x.countStatic();
-           //     expected_values[3] = x.countStatic();
+       // int[] expected_values = {x.countStatic(), y.countStatic(), x.countStatic(), x.countStatic()};
+        int[] expected_values ={
+                expected_values[0] = x.countStatic();
+                expected_values[1] = y.countStatic();
+                expected_values[2] = x.countStatic();
+                expected_values[3] = x.countStatic();
 
      //   };
 
@@ -219,10 +219,12 @@ public class Silly implements Comparable<Silly>{
          *                You can get the length of a string by using the
          *                .length() method.
          */
-        if(this.name.length() > other.name.length()){
+        if(this.name.length() > other.name.length())
+        {
             return 1;
         }
-        if(this.name.length() == other.name.length()){
+        if(this.name.length() == other.name.length())
+        {
             return 0;
         }
         return -1;
