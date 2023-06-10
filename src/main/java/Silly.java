@@ -123,7 +123,7 @@ public class Silly implements Comparable<Silly>{
         x.countStatic();
         x.countStatic();
 
-        int[] expected_values = {x.countStatic();  y.countStatic(); x.countStatic(); x.countStatic();};
+        int[] expected_values = {x.countStatic(), y.countStatic(), x.countStatic(), x.countStatic()};
        // int[] expected_values ={
              //   expected_values[0] = x.countStatic();
             //    expected_values[1] = y.countStatic();
@@ -146,7 +146,8 @@ public class Silly implements Comparable<Silly>{
      * @return the name of this Silly.
      */
     @Override
-    public String toString(){
+    public String toString()
+    {
         // TODO (Task 3): Implement the body of this method!
         return name;
     }
@@ -162,13 +163,15 @@ public class Silly implements Comparable<Silly>{
      * @return    whether o is a Silly object with the same name as this.
      */
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         /**
          * TODO (Task 4): Complete the body of this method!
          *                We've started it by checking the type of o for you.
          *                You just need to return true if the names are equal.
          */
-        if (!(o instanceof Silly)){
+        if (!(o instanceof Silly))
+        {
             return false;
         }
         Silly other = (Silly) o; // To access .name of o, we need to cast it.
@@ -202,7 +205,8 @@ public class Silly implements Comparable<Silly>{
      * object is less than, equal to, or greater than the specified object.
      */
     @Override
-    public int compareTo(Silly other) {
+    public int compareTo(Silly other)
+    {
         /**
          * TODO (Task 5): Implement the body of this method.
          *                A positive number should be returned if this.name
