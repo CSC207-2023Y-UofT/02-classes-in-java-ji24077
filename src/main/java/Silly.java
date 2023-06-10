@@ -33,7 +33,8 @@ public class Silly implements Comparable<Silly>{
      *
      * @return the current value of my_static
      */
-    public int countStatic() {
+    public int countStatic()
+    {
         // This method uses the static variable and increases it.
         int to_return = my_static;
         my_static += 1;
@@ -88,7 +89,8 @@ public class Silly implements Comparable<Silly>{
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         /**
          * Task 1 (continued): The below demonstrates how each of the Silly
          *                     constructors are called.
